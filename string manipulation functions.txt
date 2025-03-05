@@ -1,0 +1,90 @@
+
+SQL> SELECT UPPER('oracle')FROM DUAL;
+
+UPPER(
+------
+ORACLE
+
+SQL> SELECT LOWER('COMPUTER')FROM DUAL;
+
+LOWER('C
+--------
+computer
+
+SQL> SELECT INITCAP('hello hyderabad')FROM DUAL;
+
+INITCAP('HELLOH
+---------------
+Hello Hyderabad
+
+SQL> SELECT ASCII('G')FROM DUAL;
+
+ASCII('G')
+----------
+        71
+
+SQL> SELECT CHR(112)FROM DUAL;
+
+C
+-
+p
+
+SQL> SELECT SUBSTR('MANAGER',1,3)FROM DUAL;
+
+SUB
+---
+MAN
+
+SQL> SELECT INSTR('KHAIRATABAD','A',3,3)FROM DUAL;
+
+INSTR('KHAIRATABAD','A',3,3)
+----------------------------
+                           8
+
+SQL> SELECT LENGTH('ORACLE')FROM DUAL;
+
+LENGTH('ORACLE')
+----------------
+               6
+
+SQL> SELECT LPAD('ORACLE',8,'*')FROM DUAL;
+
+LPAD('OR
+--------
+**ORACLE
+
+SQL> SELECT RPAD('ORACLE',8,'*')FROM DUAL;
+
+RPAD('OR
+--------
+ORACLE**
+
+SQL> SELECT LTRIM('SMITH','S')FROM DUAL;
+
+LTRI
+----
+MITH
+
+SQL> SELECT RTRIM('JONES','S')FROM DUAL;
+
+RTRI
+----
+JONE
+
+SQL>  SELECT CONCAT('Mr.','JONES')FROM DUAL;
+
+CONCAT('
+--------
+Mr.JONES
+
+SQL> select ename,translate(ename,'ABCDEFGHIJ','987654321')from emp where ename='ALLEN';
+
+ENAME      TRANSLATE(
+---------- ----------
+ALLEN      9LL5N
+
+SQL> select ename,replace(ename,'LL','Hello')from emp where ename='ALLEN';
+
+ENAME      REPLACE(ENAME,'LL','HELLO')
+---------- --------------------------------------------------
+ALLEN      AHelloEN
